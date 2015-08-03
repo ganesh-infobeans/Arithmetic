@@ -4,6 +4,14 @@ class arithmetic {
 	function add($a,$b){
 		$c = (float)$a + (float)$b;
 		return $c;
+	}   
+	//added by Swati Shrivas 
+	function print_Str(){
+		echo "Testing github";
+	}
+}
+$obj =  new arithmetic();
+$obj->print_Str();
 
 	}     
 	// Added by Afsar khan
@@ -12,10 +20,6 @@ class arithmetic {
 		return $c;
 	}     
 
-	//added by Swati Shrivas
-	function print_Str(){
-		echo "Testing github";
-	}
 	
 
 	function multiply($m1,$m2){
@@ -31,28 +35,13 @@ class arithmetic {
 	function modulas($a,$b){
 		$c = (float)$a % (float)$b;
 		return $c;
-	}
-	
-	function division($a=1,$b=1){
-		if(($a != 0) && ($b != 0)) {
-			return (float)$a/(float)$b;
-		} else {
-			return false;
-		}
-	}
+	}    
 }
 
 $subs = new arithmetic();
 $subs->substract(5,3);
 
 
-$mod = new arithmetic();
+$mod = new airthmetic();
 $mod->modulas(10,20);
 
-$obj =  new arithmetic();
-$obj->print_Str();
-
-
-$div = new arithmetic();
-$result = $div->division(10,2);
-var_dump($result);
