@@ -5,12 +5,24 @@ class arithmetic {
 		$c = (float)$a + (float)$b;
 		return $c;
 	}     
-	// Added by shashank shroti
+	// Added by Afsar khan
 	function substract($a,$b){
 		$c = (float)$a - (float)$b;
 		return $c;
 	}     
 
+	
+	// Added by Anand Pandey
+	function modulas($a,$b){
+		$c = (float)$a % (float)$b;
+		return $c;
+	}    
 }
+
 $subs = new arithmetic();
 $subs->substract(5,3);
+
+
+$mod = new airthmetic();
+$mod->modulas(10,20);
+
