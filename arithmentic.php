@@ -17,6 +17,7 @@ class arithmetic {
 	}     
 
 	
+
 	function multiply($m1,$m2){
 		$multiply=$m1*$m2;
 		
@@ -31,7 +32,7 @@ class arithmetic {
 		$c = (float)$a % (float)$b;
 		return $c;
 	}    
-	
+
 	function division($a=1,$b=1){
 		if(($a != 0) && ($b != 0)) {
 			return (float)$a/(float)$b;
