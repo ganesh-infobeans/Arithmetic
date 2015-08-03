@@ -7,3 +7,4 @@ class arithmetic {
 	}     
 
 }
+echo "test";
