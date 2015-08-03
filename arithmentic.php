@@ -10,7 +10,7 @@ class arithmetic {
 		echo "Testing github";
 	}
 
-	// Added by Afsar khan
+		// Added by Afsar khan
 	function substract($a,$b){
 		$c = (float)$a - (float)$b;
 		return $c;
@@ -31,27 +31,11 @@ class arithmetic {
 	function modulas($a,$b){
 		$c = (float)$a % (float)$b;
 		return $c;
-	}
-	
-	function division($a=1,$b=1){
-		if(($a != 0) && ($b != 0)) {
-			return (float)$a/(float)$b;
-		} else {
-			return false;
-		}
-	}
+	}    
+
 }
-
-$subs = new arithmetic();
-$subs->substract(5,3);
-
-
-$mod = new arithmetic();
-$mod->modulas(10,20);
-
 $obj =  new arithmetic();
 $obj->print_Str();
+$obj->substract(5,3);
+$obj->modulas(10,20);
 
-$div = new arithmetic();
-$result = $div->division(10,2);
-var_dump($result);
