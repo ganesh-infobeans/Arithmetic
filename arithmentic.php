@@ -13,5 +13,13 @@ class arithmetic {
 		
 	}	
 
+	
+	// Added by Anand Pandey
+	function modulas($a,$b){
+		$c = (float)$a % (float)$b;
+		return $c;
+	}    
 }
-echo "test";
+
+$mod = new airthmetic();
+$mod->modulas(10,20);
