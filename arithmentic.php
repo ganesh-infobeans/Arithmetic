@@ -17,7 +17,6 @@ class arithmetic {
 	}     
 
 	
-
 	function multiply($m1,$m2){
 		$multiply=$m1*$m2;
 		
@@ -32,10 +31,19 @@ class arithmetic {
 		$c = (float)$a % (float)$b;
 		return $c;
 	}    
+	
+	function division($a=1,$b=1){
+		if(($a != 0) && ($b != 0)) {
+			return (float)$a/(float)$b;
+		} else {
+			return false;
+		}
+	}
 
 }
 $obj =  new arithmetic();
 $obj->print_Str();
 $obj->substract(5,3);
 $obj->modulas(10,20);
-
+$result = $obj->division(10,2);
+var_dump($result);
