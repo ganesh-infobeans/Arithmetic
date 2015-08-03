@@ -9,12 +9,8 @@ class arithmetic {
 	function print_Str(){
 		echo "Testing github";
 	}
-}
-$obj =  new arithmetic();
-$obj->print_Str();
 
-	}     
-	// Added by Afsar khan
+		// Added by Afsar khan
 	function substract($a,$b){
 		$c = (float)$a - (float)$b;
 		return $c;
@@ -36,12 +32,10 @@ $obj->print_Str();
 		$c = (float)$a % (float)$b;
 		return $c;
 	}    
+
 }
-
-$subs = new arithmetic();
-$subs->substract(5,3);
-
-
-$mod = new airthmetic();
-$mod->modulas(10,20);
+$obj =  new arithmetic();
+$obj->print_Str();
+$obj->substract(5,3);
+$obj->modulas(10,20);
 
