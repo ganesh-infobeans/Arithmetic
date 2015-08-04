@@ -52,3 +52,4 @@ $obj->substract(5,3);
 $obj->modulas(10,20);
 $result = $obj->division(10,2);
 var_dump($result);
+$result =  $obj->print_array(array("name"=>"test"));
