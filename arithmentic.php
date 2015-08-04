@@ -31,7 +31,14 @@ class arithmetic {
 	function modulas($a,$b){
 		$c = (float)$a % (float)$b;
 		return $c;
-	}    
+	}  
+
+
+		// Added by Prasun
+	function substraction($a,$b){
+		$c = $a-$b;
+		return $c;
+	}  
 
 	function division($a=1,$b=1){
 		if(($a != 0) && ($b != 0)) {
@@ -39,6 +46,10 @@ class arithmetic {
 		} else {
 			throw new Exception('Zero is not allowed in division operation');
 		}
+	}
+
+	function print_array($arr){
+		print_r($arr);
 	}
 
 }
