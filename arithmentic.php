@@ -31,11 +31,18 @@ class arithmetic {
 	function modulas($a,$b){
 		$c = (float)$a % (float)$b;
 		return $c;
-	}    
+	}  
+
+
+		// Added by Prasun
+	function substraction($a,$b){
+		$c = $a-$b;
+		return $c;
+	}  
 
 	function division($a=1,$b=1){
 		if(($a != 0) && ($b != 0)) {
-			return (float)$a/(float)$b;
+			return ((float)$a/(float)$b);
 		} else {
 			return false;
 		}
