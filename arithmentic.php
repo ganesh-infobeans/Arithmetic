@@ -31,13 +31,20 @@ class arithmetic {
 	function modulas($a,$b){
 		$c = (float)$a % (float)$b;
 		return $c;
-	}    
+	}  
+
+
+		// Added by Prasun
+	function substraction($a,$b){
+		$c = $a-$b;
+		return $c;
+	}  
 
 	function division($a=1,$b=1){
 		if(($a != 0) && ($b != 0)) {
-			return (float)$a/(float)$b;
+			return ((float)$a/(float)$b);
 		} else {
-			return false;
+			throw new Exception('Zero is not allowed in division operation');
 		}
 	}
 
@@ -50,6 +57,15 @@ $obj =  new arithmetic();
 $obj->print_Str();
 $obj->substract(5,3);
 $obj->modulas(10,20);
-$result = $obj->division(10,2);
+
 var_dump($result);
 $result =  $obj->print_array(array("name"=>"test"));
+
+try {
+	$result = $obj->division(10,2);
+	echo "<br />".$result."<br />";
+	$result = $obj->division(10,0);
+} catch(Exception $e) {
+	echo "<br />".$e->getMessage()."<br />";
+}
+
