@@ -4,9 +4,13 @@ class arithmetic {
 	function add($a,$b){
 		$c = (float)$a + (float)$b;
 		return $c;
+	}   
+	//added by Swati Shrivas 
+	function print_Str(){
+		echo "Testing github";
+	}
 
-	}     
-	// Added by Afsar khan
+		// Added by Afsar khan
 	function substract($a,$b){
 		$c = (float)$a - (float)$b;
 		return $c;
@@ -28,12 +32,19 @@ class arithmetic {
 		$c = (float)$a % (float)$b;
 		return $c;
 	}    
+
+	function division($a=1,$b=1){
+		if(($a != 0) && ($b != 0)) {
+			return (float)$a/(float)$b;
+		} else {
+			return false;
+		}
+	}
+
 }
-
-$subs = new arithmetic();
-$subs->substract(5,3);
-
-
-$mod = new airthmetic();
-$mod->modulas(10,20);
-
+$obj =  new arithmetic();
+$obj->print_Str();
+$obj->substract(5,3);
+$obj->modulas(10,20);
+$result = $obj->division(10,2);
+var_dump($result);
