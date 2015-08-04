@@ -48,6 +48,10 @@ class arithmetic {
 		}
 	}
 
+	function print_array($arr){
+		print_r($arr);
+	}
+
 }
 $obj =  new arithmetic();
 $obj->print_Str();
