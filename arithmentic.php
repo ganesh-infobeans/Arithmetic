@@ -57,6 +57,10 @@ $obj =  new arithmetic();
 $obj->print_Str();
 $obj->substract(5,3);
 $obj->modulas(10,20);
+
+var_dump($result);
+$result =  $obj->print_array(array("name"=>"test"));
+
 try {
 	$result = $obj->division(10,2);
 	echo "<br />".$result."<br />";
@@ -64,3 +68,4 @@ try {
 } catch(Exception $e) {
 	echo "<br />".$e->getMessage()."<br />";
 }
+
