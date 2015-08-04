@@ -35,7 +35,7 @@ class arithmetic {
 
 	function division($a=1,$b=1){
 		if(($a != 0) && ($b != 0)) {
-			return (float)$a/(float)$b;
+			return ((float)$a/(float)$b);
 		} else {
 			return false;
 		}
