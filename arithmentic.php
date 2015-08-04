@@ -54,6 +54,7 @@ class arithmetic {
 	
 	function arithmetic(){
 		echo "Wow !git is working ";
+		echo "another test";
 	}
 
 }
