@@ -38,4 +38,5 @@ $obj =  new arithmetic();
 $obj->print_Str();
 $obj->substract(5,3);
 $obj->modulas(10,20);
+$obj->print_Str();
 
