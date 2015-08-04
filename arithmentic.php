@@ -10,8 +10,8 @@ class arithmetic {
 		echo "Testing github";
 	}
 }
-$obj =  new arithmetic();
-$obj->print_Str();
+	$obj =  new arithmetic();
+	$obj->print_Str();
 
 	}     
 	// Added by Afsar khan
