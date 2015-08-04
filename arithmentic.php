@@ -44,8 +44,12 @@ class arithmetic {
 		if(($a != 0) && ($b != 0)) {
 			return ((float)$a/(float)$b);
 		} else {
-			return false;
+			throw new Exception('Zero is not allowed in division operation');
 		}
+	}
+
+	function print_array($arr){
+		print_r($arr);
 	}
 
 }
@@ -53,5 +57,15 @@ $obj =  new arithmetic();
 $obj->print_Str();
 $obj->substract(5,3);
 $obj->modulas(10,20);
-$result = $obj->division(10,2);
+
 var_dump($result);
+$result =  $obj->print_array(array("name"=>"test"));
+
+try {
+	$result = $obj->division(10,2);
+	echo "<br />".$result."<br />";
+	$result = $obj->division(10,0);
+} catch(Exception $e) {
+	echo "<br />".$e->getMessage()."<br />";
+}
+
