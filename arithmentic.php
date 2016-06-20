@@ -51,6 +51,11 @@ class arithmetic {
 	function print_array($arr){
 		print_r($arr);
 	}
+	
+	function arithmetic(){
+		echo "Wow !git is working ";
+		echo "another test";
+	}
 
 }
 $obj =  new arithmetic();
