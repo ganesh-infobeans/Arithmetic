@@ -1,1 +1,3 @@
-Year 2014 - updated master branch
+<?php
+echo 'throgh Git';
+?>
